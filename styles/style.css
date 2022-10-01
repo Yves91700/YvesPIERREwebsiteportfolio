@@ -190,13 +190,77 @@ header h2 {
 .project-container {
     margin-top: 100px;
 }
+/* Pour la couleur des titres P  */
+.project-container .titleP {
+    color:orange;
+}
 .project {
     position: relative;
     width: 60vw;
     max-width: 600px;
-
+    margin: 50px 5vw;
 }
 .project-container img {
-    width: 400px;
-    height: 400px;
+    
+    transition: 0.4s ease-in-out;
+    width: 100%;
+
+}
+#p2 {
+    margin: 0 6vw 0 auto; /* pour le decaler sur la droite on lui faire margin sur la gauche*/
+}
+#p3 {
+    margin-left: 8vw;
+}
+#p4 {
+    margin: 0 6vw 0 auto;
+}
+#p5 {
+    margin-left: 8vw;
+}
+#p6 {
+    margin: 0 6vw 0 auto;
+}
+#p7 {
+    margin-left: 8vw;
+}
+.project:hover img {
+    filter: brightness(20%);
+}
+.project:hover .project-infos{
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+.project-infos {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 8vw;
+    transition: 0.4s ease-out;
+    opacity: 0;
+}
+.project-infos a {
+    font-size: calc(1rem + 3vw);
+}
+.project-infos p {
+    font-size: 2rem;
+    margin-top: 1.5vw;
+    color: #fefeff;
+}
+
+footer {
+    margin: 150px 120px;
+}
+footer p {
+    font-size: calc(1rem + 2vw);
+    margin: 25px 0;
+    text-align: center;
+}
+footer a {
+    font-family: "font-bold", serif;
+    color: #000101;
+    font-size: calc(1rem + 2vw);  
+}
+.img2 {
+    background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover ;
 }
