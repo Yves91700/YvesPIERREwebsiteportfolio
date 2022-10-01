@@ -1,0 +1,202 @@
+/* paramètres géneraux */
+/* a verifier si la formule fonctionne pour le style d'écriture */
+@font-face {
+  font-family: "font-reg";
+  src: url(../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-bold";
+  src: url(../assets/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/* ::selection pour quand on selection avec la souris on modifie la couleur */
+*::selection {
+  background: #000101;
+  color: #fefeff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* on change la couleur de fond du body */
+body {
+  font-family: "font-reg", serif;
+  background: #000101;
+  color: #fefeff;
+  transition: 0.7s ease-in-out;
+}
+/* le vw (viewport-width) permet d'avoir une taille dynamique sans les medias queries */
+h2 {
+  font-size: calc(3rem + 5vw);
+  text-align: center;
+  color: rgb(217, 217, 217);
+  font-family: "font-bold", serif;
+  letter-spacing: 3px;
+}
+.title {
+  font-size: calc(1.5rem + 5vw);
+  letter-spacing: 0;
+}
+span {
+  display: inline-block;
+}
+
+/* on va changer la couleur des a href et faire un effet au hover */
+a, a:visited {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: #fefeff;
+    transition: 0.1s linear;
+    font-size: calc(0.8rem + 0.8vw);
+}
+a::after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    background: #fefeff;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    transform-origin: left;
+}
+a:hover {
+    transform: scale(1.04);
+    color: rgb(217, 217, 217);
+}
+a:hover::after {
+    animation: animlink 1.4s infinite ease-in-out ;
+}
+@keyframes animlink {
+    50% {
+        transform: scaleX(0.2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.img {
+    height: 395px;
+    width: 100vw;
+    max-width: 395px;
+    margin: 0 auto;
+    filter: grayscale(100%);/*pour filtrer les images en grisant*/
+    transition: 1.6s;
+}
+.img:hover {
+    filter: grayscale(10%);
+}
+.line {
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    background: #000101;
+    transition: cubic-bezier(0.77,0,0.18,1);
+    transform-origin: left;
+    transition-delay: 0.65s;
+}
+
+
+
+/* paramètres par ordre d'apparition */
+header {
+    height: 100vh;
+    position: relative;
+    margin: 2vw 2vw 0;
+}
+/* pour espacer les liens portfolio et contactez-moi  */
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+/* la methode de calc()permet de rendre les parties dynamique et responsive 
+sans utiliser les medias queries pratique pour une petite page simple  */
+h1 {
+    font-size: calc(2rem + 8vw);
+    margin-top: 70px;
+    font-family: "font-bold", serif;
+    letter-spacing: 6px;
+    color: #fefeff;
+}
+header h2 {
+    font-size: calc(1rem + 6.5vw);
+    margin: 18px 0;
+    text-align: left;
+}
+.scroll-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3.5vw;
+    color: rgb(217, 217, 217);
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+/* on va travailler sur la photo de À propos  */
+.about {
+    margin: 400px 0 250px;
+}
+
+/* pour gerer la taille de la photo */
+.img1{
+    height: 450px;
+}
+/* pour placer À propose par dessus la photo  */
+.h2-wrapper {
+    mix-blend-mode: exclusion;
+    margin: -90px 0 150px; /*a mettre a -220px 0 200px après ajustement*/
+}
+/* pour gerer le paragraphe en dessous de la photo */
+.About p {
+    width: 70%;
+    min-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: calc(7px + 4.5vw);
+    font-size: calc(1rem + 1vw);
+    letter-spacing: 1px;
+}
+.skills {
+    margin: 200px 0 250px;
+
+}
+.skills h2 {
+    margin-bottom: 150px;
+}
+.skills .wrapper {
+    margin: 30px O;
+}
+.skills .appear {
+    text-align: center;
+}
+.skills p {
+    font-size: calc(1rem + 6vw);
+    font-family: "font-bold", serif;
+    letter-spacing: 4px;
+    background: #000101;
+    color: #fefeff;
+    display: inline-block;
+    padding: 0 12px 12px;
+}
+.portfolio {
+    margin: 200px 0;
+}
+.project-container {
+    margin-top: 100px;
+}
+.project {
+    position: relative;
+    width: 60vw;
+    max-width: 600px;
+
+}
+.project-container img {
+    width: 400px;
+    height: 400px;
+}
