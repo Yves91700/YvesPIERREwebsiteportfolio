@@ -110,6 +110,9 @@ a:hover::after {
 .img:hover {
     filter: grayscale(10%);
 }
+.omf {
+    height: 600px;
+}
 .line {
     height: 2px;
     width: 70%;
