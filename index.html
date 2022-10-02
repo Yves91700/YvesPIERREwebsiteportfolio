@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Yves PIERRE</title>
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <header>
+    <div data-scroll-container>
+    <header data-scroll >
       <div class="links">
-        <a href="#portfolio">portfolio</a>
+        <a href="#portfolio" data-scroll-to>portfolio</a>
         <a href=""> mon cv </a>
         <a href="mailto:yvespierre91700@gmail.com ">contactez-moi</a>
       </div>
       <div class="wrapper">
-        <div class="appear" id="h1-wrapper">
+        <div data-scroll class="appear" id="h1-wrapper">
           <h1>Yves PIERRE</h1>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="appear" id="h2-1">
+      <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
+        <div data-scroll class="appear" id="h2-1">
           <h2>Développeur</h2>
         </div>
       </div>
-      <div class="appear" id="h2-2">
+      <div data-scroll class="appear" id="h2-2">
         <h2>Frontend</h2>
       </div>
       <div class="scroll-wrapper">
@@ -57,7 +60,7 @@
       </p>
     </section>
 
-    <div class="line-wrapper">
+    <div data-scroll class="line-wrapper">
       <div class="line"></div>
     </div>
     <section class="skills">
@@ -74,7 +77,7 @@
       </h2>
 
       <div class="wrapper">
-        <div class="appear">
+        <div data-scroll class="appear">
           <p>HTML5</p>
         </div>
       </div>
@@ -84,27 +87,27 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear">
+        <div data-scroll class="appear">
           <p>JavaScript</p>
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear">
+        <div data-scroll class="appear">
           <p>Vue.js</p>
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear">
+        <div data-scroll class="appear">
           <p>SEO</p>
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear">
+        <div data-scroll class="appear">
           <p>Wordpress</p>
         </div>
       </div>
     </section>
-    <div class="line-wrapper">
+    <div data-scroll  class="line-wrapper">
       <div class="line"></div>
     </div>
 
@@ -232,17 +235,17 @@
       </div>
     </section>
 
-    <div class="line-wrapper">
+    <div data-scroll  class="line-wrapper">
       <div class="line"></div>
     </div>
     <footer>
       <div class="wrapper">
-        <div class="appear">
+        <div data-scroll class="appear">
           <p>Vous avez un projet?</p>
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear" id="Ligne2">
+        <div data-scroll class="appear" id="Ligne2">
           <p>
             Je serai ravi d'en
             <a href="mailto:yvespierre91700@gmail.com">discuter</a>
@@ -250,7 +253,7 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear" id="Ligne3">
+        <div data-scroll class="appear" id="Ligne3">
           <p>avec vous</p>
         </div>
       </div>
@@ -258,5 +261,8 @@
         <div class="img img2"></div>
       </div>
     </footer>
-  </body>
+</div>
+    <script src="./assets/lib/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
 </html>

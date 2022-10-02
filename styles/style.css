@@ -20,9 +20,10 @@
   color: #fefeff;
 }
 
-html {
+/*html {
   scroll-behavior: smooth;
-}
+}*/
+
 /* on change la couleur de fond du body */
 body {
   font-family: "font-reg", serif;
@@ -30,6 +31,22 @@ body {
   color: #fefeff;
   transition: 0.7s ease-in-out;
 }
+.wrapper {
+    perspective: 900px;
+}
+.appear {
+    opacity: 0;
+    transform: translateY(100%) rotateX(-80deg);
+    transform-origin: top center;
+    transform-style: preserve-3d;
+    transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.appear.is-inview {
+    transition-delay: 1s;
+    opacity: 1;
+    transform: none;
+}
+
 /* le vw (viewport-width) permet d'avoir une taille dynamique sans les medias queries */
 h2 {
   font-size: calc(3rem + 5vw);
@@ -98,9 +115,19 @@ a:hover::after {
     margin: 0 auto;
     background: #000101;
     transition: cubic-bezier(0.77,0,0.18,1);
-    transform-origin: left;
-    transition-delay: 0.65s;
+    /* transform-origin: left; */
+    transition-delay: 0.45s;
+    opacity: 0;
+    transform: scaleX(0);
 }
+/* avec ledata-scroll la line apparaitra en opacity 1 */
+.line-wrapper.is-inview .line {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+
 
 
 
@@ -115,6 +142,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
+#h1-wrapper {
+    transition-delay: 0.3s;
+}
 /* la methode de calc()permet de rendre les parties dynamique et responsive 
 sans utiliser les medias queries pratique pour une petite page simple  */
 h1 {
@@ -124,10 +154,17 @@ h1 {
     letter-spacing: 6px;
     color: #fefeff;
 }
+
 header h2 {
     font-size: calc(1rem + 6.5vw);
     margin: 18px 0;
     text-align: left;
+}
+#h2-1 {
+    transition-delay: 0.9s;
+}
+#h2-2 {
+    transition-delay: 1.2s;
 }
 .scroll-wrapper {
     position: absolute;
