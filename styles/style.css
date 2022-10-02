@@ -232,6 +232,9 @@ header h2 {
 .project-container {
     margin-top: 100px;
 }
+.project a {
+    color: orange;
+}
 /* Pour la couleur des titres P  */
 .project-container .titleP {
     color:orange;
