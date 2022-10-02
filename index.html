@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Yves PIERRE</title>
-    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,41 +22,48 @@
       </div>
       <div class="wrapper">
         <div data-scroll class="appear" id="h1-wrapper">
-          <h1>Yves PIERRE</h1>
+          <h1 data-scroll data-scroll-speed="4" data-scroll-position="left">Yves PIERRE</h1>
         </div>
       </div>
       <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
         <div data-scroll class="appear" id="h2-1">
-          <h2>Développeur</h2>
+          <h2 
+          data-scroll
+           data-scroll-speed="6" 
+          data-scroll-direction="horizontal"
+           data-scroll-position="left"
+           >Développeur
+        </h2>
         </div>
       </div>
       <div data-scroll class="appear" id="h2-2">
-        <h2>Frontend</h2>
+        <h2
+        data-scroll
+         data-scroll-speed="-6" 
+          data-scroll-direction="horizontal"
+           data-scroll-position="left"
+        >Frontend</h2>
       </div>
       <div class="scroll-wrapper">
-        <p>svp scroll</p>
+        <p
+        data-scroll
+        data-scroll-speed="-3" 
+        >svp scroll</p>
       </div>
     </header>
 
     <section class="About">
-      <div class="img1-wrapper">
+      <div data-scroll data-scroll-speed="-1" class="img1-wrapper">
         <div class="img img1">
-            <img src="./assets/images/photo cv 1.jpeg" alt="">
+           <!-- <img src="./assets/images/photo cv 1.jpeg" alt="">-->
         </div>
       </div>
-      <div class="h2-wrapper">
+      <div data-scroll data-scroll-speed="3" class="h2-wrapper">
         <h2>À propos</h2>
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
-        obcaecati nihil iusto illum sequi iure? Inventore possimus dolorem nisi
-        perspiciatis similique officia est, veritatis harum at temporibus earum
-        atque minus voluptates a fugiat deserunt amet. Magnam recusandae ipsam
-        eligendi, aspernatur nam totam eum tenetur consequatur aut impedit quam
-        nostrum perspiciatis tempora? Recusandae nemo asperiores consectetur
-        mollitia placeat rerum dolorem porro, non et perspiciatis velit quam,
-        debitis similique cumque possimus accusantium ratione! Eum laborum
-        aliquam labore placeat. Beatae perferendis repellat pariatur!
+        Dans le cadre d'une reconversion professionnelle , passionné d'informatique et de digital , j'ai décidé de me former dans le domaine du développement web pour acquérir les compétences et en faire mon métier. 
+        J'aimerai évoluer dans ce domaine qui me plait.
       </p>
     </section>
 
@@ -65,45 +72,57 @@
     </div>
     <section class="skills">
       <h2 class="title">
-        <span>E</span>
-        <span>x</span>
-        <span>p</span>
-        <span>e</span>
-        <span>r</span>
-        <span>t</span>
-        <span>i</span>
-        <span>s</span>
-        <span>e</span>
+        <span data-scroll data-scroll-speed="1">E</span>
+        <span data-scroll data-scroll-speed="0">x</span>
+        <span data-scroll data-scroll-speed="1">p</span>
+        <span data-scroll data-scroll-speed="2">e</span>
+        <span data-scroll data-scroll-speed="0">r</span>
+        <span data-scroll data-scroll-speed="1">t</span>
+        <span data-scroll data-scroll-speed="2">i</span>
+        <span data-scroll data-scroll-speed="0">s</span>
+        <span data-scroll data-scroll-speed="1">e</span>
       </h2>
 
       <div class="wrapper">
         <div data-scroll class="appear">
-          <p>HTML5</p>
+          <p  data-scroll
+          data-scroll-speed="-2" 
+           data-scroll-direction="horizontal">HTML5</p>
         </div>
       </div>
       <div class="wrapper">
-        <div class="appear">
-          <p>CSS3</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div data-scroll class="appear">
-          <p>JavaScript</p>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div data-scroll class="appear">
-          <p>Vue.js</p>
+        <div data-scroll  class="appear">
+          <p  data-scroll
+          data-scroll-speed="1" 
+           data-scroll-direction="horizontal">CSS3</p>
         </div>
       </div>
       <div class="wrapper">
         <div data-scroll class="appear">
-          <p>SEO</p>
+          <p  data-scroll
+          data-scroll-speed="-6" 
+           data-scroll-direction="horizontal">JavaScript</p>
         </div>
       </div>
       <div class="wrapper">
         <div data-scroll class="appear">
-          <p>Wordpress</p>
+          <p  data-scroll
+          data-scroll-speed="3" 
+           data-scroll-direction="horizontal">Vue.js</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div data-scroll class="appear">
+          <p  data-scroll
+          data-scroll-speed="-6" 
+           data-scroll-direction="horizontal">SEO</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div data-scroll class="appear">
+          <p  data-scroll
+          data-scroll-speed="3" 
+           data-scroll-direction="horizontal">Wordpress</p>
         </div>
       </div>
     </section>
@@ -113,19 +132,19 @@
 
     <section class="portfolio" id="portfolio">
       <h2 class="title">
-        <span>P</span>
-        <span>o</span>
-        <span>r</span>
-        <span>t</span>
-        <span>f</span>
-        <span>o</span>
-        <span>l</span>
-        <span>i</span>
-        <span>o</span>
+        <span data-scroll data-scroll-speed="1">P</span>
+        <span data-scroll data-scroll-speed="0">o</span>
+        <span data-scroll data-scroll-speed="1">r</span>
+        <span data-scroll data-scroll-speed="2">t</span>
+        <span data-scroll data-scroll-speed="0">f</span>
+        <span data-scroll data-scroll-speed="1">o</span>
+        <span data-scroll data-scroll-speed="2">l</span>
+        <span data-scroll data-scroll-speed="0">i</span>
+        <span data-scroll data-scroll-speed="1">o</span>
       </h2>
       <!-- Pour faire un container pour chaque projet-->
       <div class="project-container">
-        <div class="project" id="p1">
+        <div data-scroll data-scroll-speed="1" class="project" id="p1">
           <img src="./assets/images/booki.jpg" alt="projet1" />
           <div class="project-infos">
             <a href="https://yves91700.github.io/Booki/" target="_blank">
@@ -139,7 +158,7 @@
 
         <!------------------------------------container projet 2------------------>
 
-        <div class="project" id="p2">
+        <div data-scroll class="project" id="p2">
           <img src="./assets/images/Oh-my-food.jpg" alt="projet2" />
           <div class="project-infos">
             <a href="https://www.google.com" target="_blank">
@@ -156,7 +175,7 @@
         </div>
         <!--------------------------container projet 3--------------------------->
 
-        <div class="project" id="p3">
+        <div data-scroll class="project" id="p3">
           <img src="./assets/images/La-chouette-agence.jpg" alt="projet3" />
           <div class="project-infos">
             <a href="https://www.google.com" target="_blank">
@@ -173,7 +192,7 @@
 
         <!----------------------------container project 4------------------------->
 
-        <div class="project" id="p4">
+        <div data-scroll class="project" id="p4">
           <img src="./assets/images/Kanap.jpg" alt="projet4" />
           <div class="project-infos">
             <a href="https://www.google.com" target="_blank">
@@ -188,7 +207,7 @@
           </div>
         </div>
         <!--------------------------------container project 5--------------------->
-        <div class="project" id="p5">
+        <div data-scroll class="project" id="p5">
           <img src="./assets/images/Sauce Piquante.jpg" alt="projet5" />
           <div class="project-infos">
             <a href="https://www.google.com" target="_blank">
@@ -203,7 +222,7 @@
           </div>
         </div>
         <!----------------------------------container project 6------------------>
-        <div class="project" id="p6">
+        <div data-scroll class="project" id="p6">
           <img src="./assets/images/Groupomania1.jpg" alt="projet6" />
           <div class="project-infos">
             <a href="https://www.google.com" target="_blank">
@@ -218,7 +237,7 @@
           </div>
         </div>
         <!-----------------------------------container projet 7------------------>
-        <div class="project" id="p7">
+        <div data-scroll class="project" id="p7">
           <img src="./assets/images/Ouitube.jpg" alt="projet7" />
           <div class="project-infos">
             <a href="https://www.google.com" target="_blank">
@@ -241,7 +260,7 @@
     <footer>
       <div class="wrapper">
         <div data-scroll class="appear">
-          <p>Vous avez un projet?</p>
+          <p>Vous êtes à la recherche d'un développeur?</p>
         </div>
       </div>
       <div class="wrapper">
@@ -257,12 +276,15 @@
           <p>avec vous</p>
         </div>
       </div>
-      <div class="img-wrapper">
+      <div data-scroll data-scroll-speed="7"
+      data-scroll-position="bottom"
+      class="img-wrapper">
         <div class="img img2"></div>
       </div>
+      <br><br><br>
     </footer>
 </div>
-    <script src="./assets/lib/locomotive-scroll.min.js"></script>
+    <script src="./assets/lib/locomotive-scroll.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>

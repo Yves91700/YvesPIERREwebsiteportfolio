@@ -99,6 +99,7 @@ a:hover::after {
 }
 
 .img {
+    background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover ;
     height: 395px;
     width: 100vw;
     max-width: 395px;
@@ -177,17 +178,17 @@ header h2 {
 
 /* on va travailler sur la photo de À propos  */
 .about {
-    margin: 400px 0 250px;
+    margin: 400px 0 200px;
 }
 
 /* pour gerer la taille de la photo */
 .img1{
-    height: 450px;
+    height: 400px;
 }
 /* pour placer À propose par dessus la photo  */
 .h2-wrapper {
     mix-blend-mode: exclusion;
-    margin: -90px 0 150px; /*a mettre a -220px 0 200px après ajustement*/
+    margin: -220px 0 200px; /*a mettre a -220px 0 200px après ajustement*/
 }
 /* pour gerer le paragraphe en dessous de la photo */
 .About p {
@@ -211,6 +212,7 @@ header h2 {
 }
 .skills .appear {
     text-align: center;
+    transition-delay: 0.6s;
 }
 .skills p {
     font-size: calc(1rem + 6vw);
@@ -236,6 +238,19 @@ header h2 {
     width: 60vw;
     max-width: 600px;
     margin: 50px 5vw;
+}
+.project::before {
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    top: -3px;
+    background: #fefeff;
+    transition: width 1s ease-out;
+    transition-delay: 0.85s;
+}
+.project.is-inview::before {
+    width: 0;
 }
 .project-container img {
     
@@ -293,11 +308,18 @@ footer p {
     margin: 25px 0;
     text-align: center;
 }
+#ligne2 {
+    transition-delay: 1.2s;
+}
+#ligne3 {
+    transition-delay: 1.6s;
+}
+
 footer a {
     font-family: "font-bold", serif;
     color: #000101;
     font-size: calc(1rem + 2vw);  
 }
 .img2 {
-    background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover ;
+    background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover;
 }
