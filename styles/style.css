@@ -110,9 +110,7 @@ a:hover::after {
 .img:hover {
     filter: grayscale(10%);
 }
-.omf {
-    height: 600px;
-}
+
 .line {
     height: 2px;
     width: 70%;
@@ -264,6 +262,9 @@ header h2 {
     width: 100%;
 
 }
+/*.omf {
+    height: 700px;
+}*/
 #p2 {
     margin: 0 6vw 0 auto; /* pour le decaler sur la droite on lui faire margin sur la gauche*/
 }
