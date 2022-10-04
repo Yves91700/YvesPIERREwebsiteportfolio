@@ -188,8 +188,8 @@ header h2 {
 }
 /* pour placer À propose par dessus la photo  */
 .h2-wrapper {
-    mix-blend-mode: exclusion;
-    margin: -220px 0 200px; /*a mettre a -220px 0 200px après ajustement*/
+    /* mix-blend-mode: exclusion; */
+    margin: -220px 0 200px; 
 }
 /* pour gerer le paragraphe en dessous de la photo */
 .About p {
