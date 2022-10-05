@@ -266,23 +266,26 @@ header h2 {
 /*.omf {
     height: 700px;
 }*/
+#p1 {
+    margin-left: 10vw;
+}
 #p2 {
-    margin: 0 6vw 0 auto; /* pour le decaler sur la droite on lui faire margin sur la gauche*/
+    margin: 0 10vw 0 auto; /* pour le decaler sur la droite on lui faire margin sur la gauche*/
 }
 #p3 {
-    margin-left: 8vw;
+    margin-left: 10vw;
 }
 #p4 {
-    margin: 0 6vw 0 auto;
+    margin: 0 10vw 0 auto;
 }
 #p5 {
-    margin-left: 8vw;
+    margin-left: 10vw;
 }
 #p6 {
-    margin: 0 6vw 0 auto;
+    margin: 0 10vw 0 auto;
 }
 #p7 {
-    margin-left: 8vw;
+    margin-left: 10vw;
 }
 .project:hover img {
     filter: brightness(20%);
@@ -334,3 +337,5 @@ footer a {
 /*.img2 {
     background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover;
 }*/
+
+
