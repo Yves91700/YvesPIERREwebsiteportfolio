@@ -20,9 +20,9 @@
   color: #fefeff;
 }
 
-html {
+/*html {
   scroll-behavior: smooth;
-}
+}*/
 
 /* on change la couleur de fond du body */
 body {
@@ -104,12 +104,12 @@ a:hover::after {
     width: 100vw;
     max-width: 395px;
     margin: 0 auto;
-    filter: grayscale(100%);/*pour filtrer les images en grisant*/
+   /* filter: grayscale(100%);/*pour filtrer les images en grisant*/
     transition: 1.6s;
 }
-.img:hover {
+/*.img:hover {
     filter: grayscale(10%);
-}
+}*/
 
 .line {
     height: 2px;
