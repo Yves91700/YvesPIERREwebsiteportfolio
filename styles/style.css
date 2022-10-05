@@ -262,6 +262,7 @@ header h2 {
     width: 100%;
 
 }
+
 /*.omf {
     height: 700px;
 }*/
@@ -293,10 +294,13 @@ header h2 {
 .project-infos {
     position: absolute;
     top: 50%;
+    left: -15%;
     transform: translate(-50%, -50%);
     margin-left: 8vw;
     transition: 0.4s ease-out;
     opacity: 0;
+    text-align: justify all ;
+    padding-right: 20px;
 }
 .project-infos a {
     font-size: calc(1rem + 3vw);
@@ -327,6 +331,6 @@ footer a {
     color: #000101;
     font-size: calc(1rem + 2vw);  
 }
-.img2 {
+/*.img2 {
     background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover;
-}
+}*/
