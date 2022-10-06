@@ -81,6 +81,7 @@ a::after{
     bottom: -4px;
     left: 0;
     transform-origin: left;
+   
 }
 a:hover {
     transform: scale(1.04);
@@ -319,13 +320,37 @@ header h2 {
     margin-top: 1.5vw;
     color: #fefeff;
 }
+
+/**************************RESPONSIVE***************************/
 @media all and ( max-width: 400px) {
-.project-container  {
-width: 2%;
+.project a {
 font-size: 1rem;
+padding-left: 20px;
 }
+.project a::after {
+    margin-left: 20px;
+}
+.project p {
+    font-size: 1rem;
+    padding-left: 20px;
 }
 
+}
+
+
+/*@media all and (  max-width: 750px) {
+    .project a {
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+    .project p {
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+}*/
+
+
+/*********************FIN RESPONSIVE***************************/
 footer {
     margin: 150px 120px;
 }
