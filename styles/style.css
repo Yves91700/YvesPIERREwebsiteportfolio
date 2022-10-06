@@ -20,9 +20,9 @@
   color: #fefeff;
 }
 
-/*html {
+html {
   scroll-behavior: smooth;
-}*/
+}
 
 /* on change la couleur de fond du body */
 body {
@@ -186,10 +186,16 @@ header h2 {
 .img1{
     height: 400px;
 }
+.imgp {
+    border-radius: 20px;
+    width: 100%;
+    /* a travailler demain  */
+}
+
 /* pour placer À propose par dessus la photo  */
 .h2-wrapper {
     /* mix-blend-mode: exclusion; */
-    margin: -220px 0 200px; 
+    margin: 250px 0 100px; 
 }
 /* pour gerer le paragraphe en dessous de la photo */
 .About p {
@@ -263,9 +269,7 @@ header h2 {
 
 }
 
-/*.omf {
-    height: 700px;
-}*/
+
 #p1 {
     margin-left: 10vw;
 }
@@ -304,6 +308,7 @@ header h2 {
     opacity: 0;
     text-align: justify all ;
     padding-right: 20px;
+    
 }
 .project-infos a {
     font-size: calc(1rem + 3vw);
@@ -312,6 +317,12 @@ header h2 {
     font-size: 2rem;
     margin-top: 1.5vw;
     color: #fefeff;
+}
+@media all and ( max-width: 400px) {
+.project-container  {
+width: 2%;
+font-size: 1rem;
+}
 }
 
 footer {
