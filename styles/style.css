@@ -100,6 +100,7 @@ a:hover::after {
 
 .img {
     background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover ;
+    border-radius: 20px;
     height: 395px;
     width: 100vw;
     max-width: 395px;
@@ -173,7 +174,7 @@ header h2 {
     left: 50%;
     transform: translateX(-50%);
     bottom: 3.5vw;
-    color: rgb(217, 217, 217);
+     color: rgb(217, 217, 217); 
     font-size: calc(0.8rem + 0.5vw);
 }
 
@@ -187,14 +188,13 @@ header h2 {
     height: 400px;
 }
 .imgp {
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 20px;  
     /* a travailler demain  */
-}
+}*/
 
 /* pour placer À propose par dessus la photo  */
 .h2-wrapper {
-    /* mix-blend-mode: exclusion; */
+     /* mix-blend-mode: exclusion;  */
     margin: 250px 0 100px; 
 }
 /* pour gerer le paragraphe en dessous de la photo */
@@ -255,7 +255,8 @@ header h2 {
     height: 110%;
     width: 100%;
     top: -3px;
-    background: #fefeff;
+    /* background: #fefeff; */
+    background: blue;
     transition: width 1s ease-out;
     transition-delay: 0.85s;
 }
