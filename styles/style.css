@@ -123,6 +123,9 @@ a:hover::after {
     opacity: 0;
     transform: scaleX(0);
 }
+.lineS {
+    margin-top: 60px;
+}
 /* avec le data-scroll la line apparaitra en opacity 1 */
 .line-wrapper.is-inview .line {
     opacity: 1;
@@ -334,6 +337,18 @@ padding-left: 20px;
     font-size: 1rem;
     padding-left: 20px;
 }
+.img.img2 {
+    margin: 0 auto ;
+}
+.title {
+    font-size: 2.3rem;
+}
+.img {
+    width: 90%;
+}
+.line {
+    margin-bottom: 10px;
+}
 
 }
 
@@ -388,8 +403,6 @@ footer a {
     color: #000101;
     font-size: calc(1rem + 2vw);  
 }
-/*.img2 {
-    background: url(../assets/images/photo\ cv\ 1.jpeg) center/cover;
-}*/
+
 
 

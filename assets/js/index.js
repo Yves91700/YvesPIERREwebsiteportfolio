@@ -1,8 +1,10 @@
+
+
 const scroll = new LocomotiveScroll({
-    el:document.querySelector('[data-scroll-container]'),
+    el: document.querySelector("[data-scroll-container]"),
     smooth: true,
-    tablet:{smooth: true},
-    smarphone: {smooth: true},
+    tablet: { smooth: true },
+    smarphone: { smooth: true },
 });
 //pour changer le body color//
 scroll.on("scroll", () => {
