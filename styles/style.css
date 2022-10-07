@@ -352,7 +352,7 @@ padding-left: 20px;
     }
 }
 
-@media all and (  min-width: 961px) and (max-width: 1050px) {
+@media all and (  min-width: 961px) and (max-width: 1200px) {
     .project a {
         font-size: 2rem;
         padding-left: 60px;
