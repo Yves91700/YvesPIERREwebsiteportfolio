@@ -201,7 +201,6 @@ header h2 {
      /* mix-blend-mode: exclusion;  */
     margin: 250px 0 100px; 
 }
-/* pour gerer le paragraphe en dessous de la photo */
 .About p {
     width: 70%;
     min-width: 280px;
@@ -219,7 +218,7 @@ header h2 {
     margin-bottom: 150px;
 }
 .skills .wrapper {
-    margin: 30px O;
+    margin: 30px 0;
 }
 .skills .appear {
     text-align: center;
@@ -299,10 +298,12 @@ header h2 {
 .project:hover img {
     filter: brightness(20%);
 }
-.project:hover .project-infos{
+.project:hover .project-infos {
     opacity: 1;
     transform: translate(0, -50%);
 }
+
+
 .project-infos {
     position: absolute;
     top: 50%;
@@ -311,10 +312,11 @@ header h2 {
     margin-left: 8vw;
     transition: 0.4s ease-out;
     opacity: 0;
-    text-align: justify all ;
+    text-align: justify all;
     padding-right: 20px;
     
 }
+
 .project-infos a {
     font-size: calc(1rem + 3vw);
 }
