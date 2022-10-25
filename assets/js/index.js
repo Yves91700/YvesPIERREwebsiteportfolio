@@ -12,7 +12,7 @@ scroll.on("scroll", () => {
         document.body.style.background = "#000101";
         document.body.style.color = "#fefeff";
     } else {
-        document.body.style.background = "blue";
+        document.body.style.background = "#5b6c78";
         document.body.style.color = "#fefeff";
     }
 });

@@ -259,7 +259,7 @@ header h2 {
     width: 100%;
     top: -3px;
     /* background: #fefeff; */
-    background: blue;
+    background: #5b6c78;
     transition: width 1s ease-out;
     transition-delay: 0.85s;
 }
